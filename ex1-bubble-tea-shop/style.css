@@ -1,5 +1,64 @@
 body {
   font-family: "Kanit";
+  background-color: black;
+  color: white;
+  width: 100vw;
+  height: 100vh;
+  font-size: 16px;
+  z-index: 0;
+  box-sizing: border-box;
 }
 
-/* Start coding here */
+.container {
+  position: relative;
+  width: fit-content;
+  padding: 5px;
+  top: 50%;
+  transform: translate(0, -50%);
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+.pic {
+  border-radius: 5px;
+}
+
+.gradient {
+  width: 626px;
+  height: 310px;
+  background-image: linear-gradient(to top, black, transparent);
+  position: absolute;
+  top: 0;
+  left: 4px;
+  border-radius: 5px;
+}
+
+.tag {
+  background-color: rgba(88, 83, 83, 0.3);
+  width: fit-content;
+  padding: 5px 15px;
+  position: absolute;
+  right: 0px;
+  top: 20px;
+  font-size: 1.15rem;
+  z-index: 4;
+}
+
+.title {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  font-size: 1.25rem;
+  z-index: 3;
+}
+
+.white {
+  width: 100%;
+  height: 100%;
+  /* border: 3px solid; */
+  position: absolute;
+  top: 0px;
+  background-color: white;
+  z-index: -1;
+  margin: auto;
+}
